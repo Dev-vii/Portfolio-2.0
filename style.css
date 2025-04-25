@@ -5,12 +5,22 @@ body {
 
 .Intro {
 
-    h1{
+    h1 {
         position: absolute;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 45px;
-        left: 200px;
-        top: 200px;
+        font-family: "PT Sans", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 70px;
+        left: 150px;
+        top: 170px;
+    }
+
+    p {
+        position: absolute;
+        font-family: "PT Sans", sans-serif;
+        font-size: 22px;
+        left: 150px;
+        top: 290px;
     }
 
     .Model1 {
@@ -20,7 +30,7 @@ body {
         left: 800px;
     }
 
-    .cloud1{
+    .cloud1 {
         position: absolute;
         height: 200px;
         top: 280px;
@@ -28,4 +38,23 @@ body {
         transform: rotateY(180deg);
         z-index: -1;
     }
+
+    .stars {
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        filter: opacity(60%);
+        left: 0;
+        top: -390px;
+        z-index: -1;
+    }
+}
+
+.linha {
+    position: absolute;
+    height: 1900px;
+    width: 3px;
+    background-color: rgb(23, 61, 145);
+    right: 547px;
+    top: 500px;
 }
