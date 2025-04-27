@@ -13,6 +13,7 @@ body {
         font-size: 70px;
         left: 150px;
         top: 170px;
+        z-index: 1;
     }
 
     p {
@@ -21,6 +22,7 @@ body {
         font-size: 22px;
         left: 150px;
         top: 290px;
+        z-index: 1;
     }
 
     .Model1 {
@@ -46,7 +48,7 @@ body {
         filter: opacity(60%);
         left: 0;
         top: -390px;
-        z-index: -1;
+        z-index: -2;
     }
 }
 
@@ -64,26 +66,42 @@ body {
 
     .foto1 {
         position: absolute;
-        left: 900px;
-        height: 340px;
+        left: 860px;
+        height: 350px;
         border-radius: 30px;
         transform: rotate(3deg);
-        top: 1150px;
+        top: 1130px;
+    }
+
+    .cloud2 {
+        position: absolute;
+        top: 1380px;
+        left: 700px;
+        height: 200px;
     }
 
     h2 {
         position: relative;
         font-family: "PT Sans", sans-serif;
-        top: 1150px;
+        top: 1130px;
         left: 100px;
-        font-size: 50px;
+        font-size: 70px;
     }
 
     p {
         position: relative;
         font-family: "PT Sans", sans-serif;
-        top: 1150px;
+        top: 1090px;
         left: 100px;
         font-size: 20px;
+    }
+
+    .stars2{
+        position: absolute;
+        top: 900px;
+        left: 0px;
+        height: 500px;
+        filter: opacity(40%);
+        z-index: -1;
     }
 }
