@@ -3,6 +3,24 @@ body {
     color: #f0f0f0;
 }
 
+header {
+    position: fixed;
+    height: 80px;
+    z-index: 2;
+    top: -35px;
+    left: 50%;
+    transform: translate(-50%);
+
+    .icons {
+        position: relative;
+        cursor: pointer;
+        top: 5px;
+        height: 25px;
+        gap: 300px;
+        display: flex;
+    }
+}
+
 .Intro {
 
     h1 {
@@ -96,7 +114,7 @@ body {
         font-size: 20px;
     }
 
-    .stars2{
+    .stars2 {
         position: absolute;
         top: 900px;
         left: 0px;
