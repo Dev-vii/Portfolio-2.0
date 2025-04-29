@@ -144,12 +144,16 @@ header {
     position: absolute;
     top: 1900px;
 
+    #teclink {
+        top: 50px;
+    }
+
     h3 {
         position: absolute;
         font-family: "PT Sans", sans-serif;
         top: 50px;
         left: 100px;
-        font-size: 75px;
+        font-size: 70px;
     }
 
     p {
@@ -157,7 +161,8 @@ header {
         font-family: "PT Sans", sans-serif;
         top: 330px;
         left: 110px;
-        font-size: 45px;
+        font-size: 35px;
+        display: none;
     }
 
     .constll {
@@ -165,5 +170,90 @@ header {
         height: 710px;
         filter: opacity(40%);
         left: 530px;
+    }
+
+    .techs {
+        position: absolute;
+        cursor: pointer;
+
+        #html {
+            position: absolute;
+            height: 70px;
+            left: 730px;
+            top: 240px;
+            filter: opacity(70%);
+            transform: rotate(-10deg);
+            transition: 0.5s;
+        }
+        #html:hover {
+            height: 100px;
+            left: 720px;
+            top: 230px;
+            filter: opacity(90%);
+        }
+
+        #css {
+            position: absolute;
+            height: 85px;
+            left: 730px;
+            top: 110px;
+            filter: opacity(70%);
+            transform: rotate(3deg);
+            transition: 0.3s;
+        }
+        #css:hover {
+            height: 100px;
+            left: 720px;
+            top: 100px;
+            filter: opacity(90%);
+        }
+
+        #js {
+            position: absolute;
+            height: 70px;
+            left: 980px;
+            top: 230px;
+            filter: opacity(70%);
+            transform: rotate(10deg);
+            transition: 0.3s;
+        }
+        #js:hover {
+            height: 100px;
+            left: 970px;
+            top: 220px;
+            filter: opacity(90%);
+        }
+
+        #git {
+            position: absolute;
+            height: 75px;
+            left: 720px;
+            top: 460px;
+            filter: opacity(70%);
+            transform: rotate(-7deg);
+            transition: 0.5s;
+        }
+        #git:hover {
+            height: 100px;
+            left: 710px;
+            top: 450px;
+            filter: opacity(90%);
+        }
+
+        #react {
+            position: absolute;
+            height: 80px;
+            left: 865px;
+            top: 305px;
+            filter: opacity(70%);
+            transform: rotate(2deg);
+            transition: 0.5s;
+        }
+        #react:hover {
+            height: 100px;
+            left: 855px;
+            top: 295px;
+            filter: opacity(90%);
+        }
     }
 }
