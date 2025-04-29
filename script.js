@@ -1,7 +1,7 @@
 const header = document.getElementById("header")
 
 header.addEventListener('mouseenter', () => {
-    header.style.top = "5px"
+    header.style.top = "0"
     header.style.transition = "0.5s"
 });
 
