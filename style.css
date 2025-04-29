@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(to left, rgb(4, 6, 43), black);
     color: #f0f0f0;
@@ -133,5 +137,33 @@ header {
         height: 500px;
         filter: opacity(40%);
         z-index: -1;
+    }
+}
+
+#Tecnologias {
+    position: absolute;
+    top: 1900px;
+
+    h3 {
+        position: absolute;
+        font-family: "PT Sans", sans-serif;
+        top: 50px;
+        left: 100px;
+        font-size: 75px;
+    }
+
+    p {
+        position: absolute;
+        font-family: "PT Sans", sans-serif;
+        top: 330px;
+        left: 110px;
+        font-size: 45px;
+    }
+
+    .constll {
+        position: absolute;
+        height: 710px;
+        filter: opacity(40%);
+        left: 530px;
     }
 }
