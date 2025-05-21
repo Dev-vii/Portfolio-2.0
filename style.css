@@ -153,16 +153,25 @@ header {
         font-family: "PT Sans", sans-serif;
         top: 50px;
         left: 100px;
-        font-size: 70px;
+        font-size: 75px;
     }
 
     p {
         position: absolute;
         font-family: "PT Sans", sans-serif;
-        top: 330px;
+        top: 310px;
         left: 110px;
-        font-size: 35px;
+        font-size: 45px;
         display: none;
+    }
+
+    .stars3 {
+        position: absolute;
+        top: 180px;
+        left: 200px;
+        height: 550px;
+        filter: opacity(30%);
+        z-index: -2;
     }
 
     .constll {
@@ -185,6 +194,7 @@ header {
             transform: rotate(-10deg);
             transition: 0.5s;
         }
+
         #html:hover {
             height: 100px;
             left: 720px;
@@ -201,6 +211,7 @@ header {
             transform: rotate(3deg);
             transition: 0.3s;
         }
+
         #css:hover {
             height: 100px;
             left: 720px;
@@ -217,6 +228,7 @@ header {
             transform: rotate(10deg);
             transition: 0.3s;
         }
+
         #js:hover {
             height: 100px;
             left: 970px;
@@ -233,6 +245,7 @@ header {
             transform: rotate(-7deg);
             transition: 0.5s;
         }
+
         #git:hover {
             height: 100px;
             left: 710px;
@@ -249,6 +262,7 @@ header {
             transform: rotate(2deg);
             transition: 0.5s;
         }
+
         #react:hover {
             height: 100px;
             left: 855px;
