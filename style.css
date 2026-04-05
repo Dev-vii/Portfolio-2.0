@@ -7,6 +7,11 @@ body {
     overflow: hidden
 }
 
+@font-face {
+    font-family: font-title;
+    src: url("stretch_pro/StretchPro.otf");
+}
+
 @keyframes updown {
     0% {
         transform: translateY(0);
@@ -36,6 +41,26 @@ body {
 }
 
 section {
+
+    #intro {
+        position: relative;
+        top: 350px;
+        left: 70px;
+
+        h1 {
+            font-family: font-title;
+            font-size: 60px;
+            color: #333;
+        }
+
+        p {
+            margin-top: -20px;
+            font-family: font-title;
+            font-size: 23.4px;
+            color: #333;
+        }
+    }
+
 
     .bgtriangle {
         position: relative;
@@ -77,10 +102,24 @@ section {
 
         .triangle4 {
             position: absolute;
-            width: 150px;
-            height: 100px;
-            transform: skew(20deg);
-            background-color: rgb(146, 94, 94);
+            left: 975px;
+            top: -50px;
+            width: 200px;
+            height: 400px;
+            transform: skew(28deg);
+            background-color: #e0e0e0;
+        }
+
+        .triangle5 {
+            position: absolute;
+            right: -170px;
+            top: -320px;
+            width: 0;
+            height: 0;
+            border-left: 250px solid transparent;
+            border-right: 250px solid transparent;
+            border-bottom: 450px solid #e0e0e0;
+            animation: updown 5s ease-in-out infinite;
         }
     }
 }
