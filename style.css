@@ -80,11 +80,10 @@ section {
             position: absolute;
             right: -20px;
             top: 600px;
-            width: 0;
-            height: 0;
-            border-left: 210px solid transparent;
-            border-right: 210px solid transparent;
-            border-bottom: 400px solid #e0e0e0;
+            width: 200px;
+            height: 200px;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            background: linear-gradient(1deg, #e0e0e0, #ffddc7);
             animation: updown 5s ease-in-out infinite;
         }
 
@@ -92,11 +91,10 @@ section {
             position: absolute;
             right: 420px;
             top: 550px;
-            width: 0;
-            height: 0;
-            border-left: 110px solid transparent;
-            border-right: 110px solid transparent;
-            border-bottom: 200px solid #e0e0e0;
+            width: 220px;
+            height: 200px;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            background: linear-gradient(1deg, #e0e0e0, #f6deff);
             animation: updown2 5s ease-in-out infinite;
         }
 
@@ -107,7 +105,7 @@ section {
             width: 200px;
             height: 400px;
             transform: skew(28deg);
-            background-color: #e0e0e0;
+            background: linear-gradient(1deg, #dcefff, #e0e0e0);
         }
 
         .triangle5 {
