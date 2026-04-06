@@ -4,7 +4,7 @@ html {
 
 body {
     background: linear-gradient(to right, #f3f3f3, #c2c2c2);
-    overflow: hidden
+    background-attachment: fixed;
 }
 
 /* FONTES */
@@ -15,10 +15,10 @@ body {
 
 /* CORES */
 :root {
-  --text-grey: #333;
-  --light-grey: #616161;
-  --lima-green: #a2f04a;
-  --white: #e0e0e0;
+    --text-grey: #333;
+    --light-grey: #616161;
+    --lima-green: #a2f04a;
+    --white: #e0e0e0;
 }
 
 /* ANIMAÇÕES */
@@ -55,7 +55,7 @@ section {
 
     /* INTRODUÇÃO */
     #intro {
-        position: relative;
+        position: absolute;
         top: 360px;
         left: 80px;
 
@@ -74,7 +74,8 @@ section {
     }
 
     .bgtriangle {
-        position: relative;
+        position: absolute;
+        right: 0px;
 
         .triangle1 {
             position: absolute;
@@ -113,7 +114,7 @@ section {
 
         .triangle4 {
             position: absolute;
-            left: 975px;
+            left: -935px;
             top: -50px;
             width: 200px;
             height: 400px;
@@ -131,6 +132,28 @@ section {
             border-right: 250px solid transparent;
             border-bottom: 450px solid var(--lima-green);
             animation: updown 5s ease-in-out infinite;
+        }
+    }
+
+    /* BIOGRAFIA */
+    #bio {
+        position: absolute;
+        top: 360px;
+        left: 3200px;
+
+        .biobox {
+            position: absolute;
+            width: 800px;
+            height: 300px;
+            background-color: var(--light-grey);
+            border: 10px solid var(--lima-green);
+
+            p {
+                font-family: font-title;
+                font-size: 18px;
+                color: var(--white);
+                padding: 30px;
+            }
         }
     }
 }
