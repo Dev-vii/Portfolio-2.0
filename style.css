@@ -5,6 +5,10 @@ html {
 body {
     background: linear-gradient(to right, #f3f3f3, #c2c2c2);
     background-attachment: fixed;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* FONTES */
@@ -52,6 +56,8 @@ body {
 
 /* SECTION */
 section {
+    width: 100vw;
+    height: 100vh;
 
     /* INTRODUÇÃO */
     #intro {
