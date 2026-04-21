@@ -91,7 +91,7 @@ section {
             height: 700px;
             clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
             object-fit: cover;
-            animation: updown 5s ease-in-out infinite
+            animation: updown 5s ease-in-out infinite;
         }
 
         .triangle2 {
@@ -145,14 +145,38 @@ section {
     #bio {
         position: absolute;
         top: 360px;
-        left: 3200px;
+        left: 4000px;
+
+        h2 {
+            position: absolute;
+            font-family: font-title;
+            font-size: 150px;
+            background: linear-gradient(to right, rgba(173, 173, 173, 0.363), black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            top: -350px;
+            left: -450px;
+        }
+
+        .borderbox {
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            width: 900px;
+            height: 370px;
+            background-color: var(--lima-green);
+            clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+            z-index: -1;
+            box-shadow: 10px 10px 5px 2px black;
+        }
 
         .biobox {
             position: absolute;
-            width: 800px;
-            height: 300px;
+            width: 900px;
+            height: 350px;
             background-color: var(--light-grey);
-            border: 10px solid var(--lima-green);
+            clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
 
             p {
                 font-family: font-title;
