@@ -159,30 +159,41 @@ section {
             left: -450px;
         }
 
+        .foto2 {
+            position: absolute;
+            width: 600px;
+            clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+            top: -220px;
+            left: -900px;
+            z-index: 3;
+        }
+
         .borderbox {
             position: absolute;
-            left: -10px;
-            top: -10px;
-            width: 900px;
-            height: 370px;
+            left: -15px;
+            top: 15px;
+            width: 870px;
+            height: 350px;
             background-color: var(--lima-green);
-            clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
             z-index: -1;
             box-shadow: 10px 10px 5px 2px black;
+            animation: updown2 5s ease-in-out infinite;
         }
 
         .biobox {
             position: absolute;
-            width: 900px;
+            width: 850px;
             height: 350px;
-            background-color: var(--light-grey);
-            clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+            background-color: rgb(54, 54, 54);
+            clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+            animation: updown 5s ease-in-out infinite;
 
             p {
                 font-family: font-title;
                 font-size: 18px;
                 color: var(--white);
-                padding: 30px;
+                padding: 40px;
             }
         }
     }
