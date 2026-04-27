@@ -197,4 +197,89 @@ section {
             }
         }
     }
+
+    #tecs {
+        position: absolute;
+        top: 80px;
+        left: 6000px;
+
+        .tecbox1 {
+            position: absolute;
+            width: 1800px;
+            height: 800px;
+            background-color: rgb(54, 54, 54);
+            background: linear-gradient(to right, rgb(39, 39, 39),rgb(54, 54, 54));
+            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+            z-index: -2;
+
+            h3 {
+                position: absolute;
+                font-family: font-title;
+                color: #a7ee56;
+                font-size: 72px;
+                top: -20px;
+                left: 530px;
+                white-space: nowrap;
+            }
+
+            h4 {
+                position: absolute;
+                font-family: font-title;
+                color: var(--white);
+                font-size: 50px;
+                top: 220px;
+                left: 1150px;
+            }
+
+            p {
+                position: absolute;
+                font-family: font-title;
+                color: var(--white);
+                font-size: 23px;
+                text-align: center;
+                top: 370px;
+                left: 1070px;
+            }
+        }
+
+        .tecborder {
+            position: absolute;
+            width: 1800px;
+            height: 800px;
+            top: 30px;
+            left: 10px;
+            background-color: var(--lima-green);
+            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+            z-index: -3;
+            animation: updown 5s ease-in-out infinite;
+        }
+
+        .tecbox2 {
+            position: absolute;
+            width: 700px;
+            height: 750px;
+            left: 100px;
+            top: 90px;
+            background-color: rgb(180, 255, 69);
+            clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 10% 100%);
+            z-index: -1;
+            animation: updown 5s ease-in-out infinite;
+
+            .tecborder2 {
+                position: absolute;
+                width: 570px;
+                height: 650px;
+                left: 100px;
+                top: 100px;
+                background-color: rgb(32, 32, 32);
+                clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
+                z-index: -1;
+                animation: updown 5s ease-in-out infinite;
+            }
+
+            .tools {
+                list-style: none;
+            }
+        }
+    }
 }
