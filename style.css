@@ -208,7 +208,7 @@ section {
             width: 1800px;
             height: 800px;
             background-color: rgb(54, 54, 54);
-            background: linear-gradient(to right, rgb(39, 39, 39),rgb(54, 54, 54));
+            background: linear-gradient(to right, rgb(39, 39, 39), rgb(54, 54, 54));
             clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
             z-index: -2;
 
