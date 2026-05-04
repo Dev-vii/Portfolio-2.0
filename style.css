@@ -217,8 +217,8 @@ section {
                 font-family: font-title;
                 color: #a7ee56;
                 font-size: 72px;
-                top: -20px;
-                left: 530px;
+                top: -30px;
+                left: 600px;
                 white-space: nowrap;
             }
 
@@ -259,7 +259,7 @@ section {
             width: 700px;
             height: 750px;
             left: 100px;
-            top: 90px;
+            top: 80px;
             background-color: rgb(180, 255, 69);
             clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 10% 100%);
             z-index: -1;
@@ -270,7 +270,7 @@ section {
                 width: 570px;
                 height: 650px;
                 left: 100px;
-                top: 100px;
+                top: 80px;
                 background-color: rgb(32, 32, 32);
                 clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
                 z-index: -1;
@@ -279,6 +279,27 @@ section {
 
             .tools {
                 list-style: none;
+            }
+
+            .bgpadrao {
+                position: absolute;
+                width: 550px;
+                left: 100px;
+                top: 300px;
+                object-fit: cover;
+                z-index: 2;
+            }
+
+            .html5 {
+                position: absolute;
+                width: 400px;
+                height: 550px;
+                border-radius: 30px;
+                background-color: rgba(255, 255, 255, 0.336);
+                backdrop-filter: blur(6px);
+                top: 120px;
+                left: 190px;
+                z-index: 3;
             }
         }
     }
