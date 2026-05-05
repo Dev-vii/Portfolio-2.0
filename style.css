@@ -9,7 +9,6 @@ body {
     overflow-y: hidden;
     width: 100vw;
     height: 100vh;
-    perspective: 1200px;
 }
 
 /* FONTES */
@@ -294,6 +293,7 @@ section {
                     top: 120px;
                     left: 190px;
                     z-index: 3;
+                    cursor: pointer;
 
                     .imgtec {
                         position: absolute;

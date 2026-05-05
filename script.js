@@ -15,13 +15,19 @@ document.addEventListener('wheel', (e) => {
 
 const cards = document.querySelectorAll('#tecs .tools li');
 
-window.addEventListener("pointermove", (e) => {
-    const { clientX, clientY } = e;
+cards.forEach((card) => {
+    card.addEventListener('pointermove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
 
-    const centerX = (window.innerHeight / 2 - clientY) / 25;
-    const centerY = (clientX - window.innerWidth / 2) / 25;
+        const rotateX = (rect.height / 2 - y) / 25;
+        const rotateY = (x - rect.width / 2) / 25;
 
-    cards.forEach((card) => {
-        card.style.transform = `rotateX(${centerX}deg) rotateY(${centerY}deg)`;
+        card.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener('pointerleave', () => {
+        card.style.transform = "";
     });
 });
