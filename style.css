@@ -9,6 +9,7 @@ body {
     overflow-y: hidden;
     width: 100vw;
     height: 100vh;
+    perspective: 1200px;
 }
 
 /* FONTES */
@@ -279,6 +280,29 @@ section {
 
             .tools {
                 list-style: none;
+
+                #card {
+                    position: absolute;
+                    width: 400px;
+                    height: 550px;
+                    border-radius: 30px;
+                    border-top: 2px solid rgba(255, 255, 255 ,0.4);
+                    border-left: 2px solid rgba(255, 255, 255 ,0.4);
+                    background-color: rgba(255, 255, 255, 0.336);
+                    backdrop-filter: blur(6px);
+                    box-shadow: #00000038 10px 10px 10px 0px;
+                    top: 120px;
+                    left: 190px;
+                    z-index: 3;
+
+                    .imgtec {
+                        position: absolute;
+                        width: 400px;   
+                        top: 47%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
             }
 
             .bgpadrao {
@@ -288,18 +312,6 @@ section {
                 top: 300px;
                 object-fit: cover;
                 z-index: 2;
-            }
-
-            .html5 {
-                position: absolute;
-                width: 400px;
-                height: 550px;
-                border-radius: 30px;
-                background-color: rgba(255, 255, 255, 0.336);
-                backdrop-filter: blur(6px);
-                top: 120px;
-                left: 190px;
-                z-index: 3;
             }
         }
     }

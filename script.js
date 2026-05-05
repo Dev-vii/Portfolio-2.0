@@ -10,3 +10,18 @@ document.addEventListener('wheel', (e) => {
         behavior: 'smooth'
     });
 }, { passive: false });
+
+// Interação de cartão com mouse
+
+const cards = document.querySelectorAll('#tecs .tools li');
+
+window.addEventListener("pointermove", (e) => {
+    const { clientX, clientY } = e;
+
+    const centerX = (window.innerHeight / 2 - clientY) / 25;
+    const centerY = (clientX - window.innerWidth / 2) / 25;
+
+    cards.forEach((card) => {
+        card.style.transform = `rotateX(${centerX}deg) rotateY(${centerY}deg)`;
+    });
+});
