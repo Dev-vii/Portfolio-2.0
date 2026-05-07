@@ -280,13 +280,17 @@ section {
             .tools {
                 list-style: none;
 
+                .active {
+                    opacity: 0%;
+                }
+
                 #card {
                     position: absolute;
                     width: 400px;
                     height: 550px;
                     border-radius: 30px;
-                    border-top: 2px solid rgba(255, 255, 255 ,0.4);
-                    border-left: 2px solid rgba(255, 255, 255 ,0.4);
+                    border-top: 2px solid rgba(255, 255, 255, 0.4);
+                    border-left: 2px solid rgba(255, 255, 255, 0.4);
                     background-color: rgba(255, 255, 255, 0.336);
                     backdrop-filter: blur(6px);
                     box-shadow: #00000038 10px 10px 10px 0px;
@@ -294,15 +298,18 @@ section {
                     left: 190px;
                     z-index: 3;
                     cursor: pointer;
+                    opacity: 100%;
 
                     .imgtec {
                         position: absolute;
-                        width: 400px;   
+                        width: 400px;
                         top: 47%;
                         left: 50%;
                         transform: translate(-50%, -50%);
                     }
                 }
+
+
             }
 
             .bgpadrao {
