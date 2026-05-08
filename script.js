@@ -13,7 +13,7 @@ document.addEventListener('wheel', (e) => {
 
 // Interação de cartão com mouse
 
-const cards = document.querySelectorAll('#tecs .tools li');
+const cards = document.querySelectorAll('#tecs ul li');
 
 cards.forEach((card) => {
     card.addEventListener('pointermove', (e) => {
@@ -31,3 +31,21 @@ cards.forEach((card) => {
         card.style.transform = "";
     });
 });
+
+// LISTA DE TECNOLOGIAS
+
+let botaoAnter = document.getElementById('anter');
+let botaoProx = document.getElementById('prox');
+
+let section = document.getElementsByClassName('container');
+
+
+botaoAnter.onclick = () => {
+    alert('Anterior');
+}
+
+botaoProx.onclick = () => {
+    cards.forEach((card) => {
+        card.classList.remove('ativo')
+    });
+}

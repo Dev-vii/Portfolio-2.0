@@ -242,6 +242,31 @@ section {
             }
         }
 
+        #buttons {
+            position: absolute;
+            top: 500px;
+            left: 1100px;
+
+            button {
+                font-family: font-title;
+                font-size: 20px;
+                color: var(--white);
+                background-color: transparent;
+                border: 2px solid var(--white);
+                border-radius: 5px;
+                padding: 10px 20px;
+                margin: 0 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: var(--white);
+                    color: rgb(39, 39, 39);
+                    transform: scale(1.1);
+                }
+            }
+        }
+
         .tecborder {
             position: absolute;
             width: 1800px;
@@ -277,14 +302,10 @@ section {
                 animation: updown 5s ease-in-out infinite;
             }
 
-            .tools {
+            ul {
                 list-style: none;
 
-                .active {
-                    opacity: 0%;
-                }
-
-                #card {
+                .card {
                     position: absolute;
                     width: 400px;
                     height: 550px;
@@ -298,7 +319,7 @@ section {
                     left: 190px;
                     z-index: 3;
                     cursor: pointer;
-                    opacity: 100%;
+                    opacity: 0;
 
                     .imgtec {
                         position: absolute;
@@ -308,8 +329,6 @@ section {
                         transform: translate(-50%, -50%);
                     }
                 }
-
-
             }
 
             .bgpadrao {
@@ -319,6 +338,22 @@ section {
                 top: 300px;
                 object-fit: cover;
                 z-index: 2;
+            }
+        }
+    }
+}
+
+/* REMOVER ATIVO */
+section {
+
+    #tecs {
+
+        .tecbox2 {
+
+            ul {
+                & .ativo {
+                    opacity: 1;
+                }
             }
         }
     }
