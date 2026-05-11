@@ -221,25 +221,6 @@ section {
                 left: 600px;
                 white-space: nowrap;
             }
-
-            h4 {
-                position: absolute;
-                font-family: font-title;
-                color: var(--white);
-                font-size: 50px;
-                top: 220px;
-                left: 1150px;
-            }
-
-            p {
-                position: absolute;
-                font-family: font-title;
-                color: var(--white);
-                font-size: 23px;
-                text-align: center;
-                top: 370px;
-                left: 1070px;
-            }
         }
 
         #buttons {
@@ -300,6 +281,27 @@ section {
                 clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
                 z-index: -1;
                 animation: updown 5s ease-in-out infinite;
+            }
+
+            h4 {
+                position: absolute;
+                font-family: font-title;
+                color: var(--white);
+                font-size: 30px;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            p {
+                position: absolute;
+                font-family: font-title;
+                color: var(--white);
+                font-size: 18px;
+                text-align: center;
+                top: 85%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
 
             ul {

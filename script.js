@@ -40,12 +40,33 @@ let botaoProx = document.getElementById('prox');
 let section = document.getElementsByClassName('container');
 
 
+let active = 0
+let Primeiro = 0
+
+// LENGTH = 4 CARTAS, POSIÇÃO FINAL É 3, POR ISSO -1
+let Ultimo = cards.length - 1
+
+
 botaoAnter.onclick = () => {
-    alert('Anterior');
+    let cardAntigo = document.querySelector('#tecs .tecbox2 ul li.ativo');
+    cardAntigo.classList.remove('ativo');
+
+    if (active - 1 < Primeiro) {
+        active = Ultimo;
+    } else {
+        active--;
+    }
+    cards[active].classList.add('ativo');
 }
 
 botaoProx.onclick = () => {
-    cards.forEach((card) => {
-        card.classList.remove('ativo')
-    });
+    let cardAntigo = document.querySelector('#tecs .tecbox2 ul li.ativo');
+    cardAntigo.classList.remove('ativo');
+
+    if (active + 1 > Ultimo) {
+        active = 0
+    } else {
+        active++
+    }
+    cards[active].classList.add('ativo');
 }
