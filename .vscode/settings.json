@@ -14,7 +14,12 @@
         },
         "Git Bash": {
             "source": "Git Bash",
-            "icon": "terminal-git-bash"
+            "icon": "terminal-git-bash",
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": [
+                "--login",
+                "-i"
+            ]
         },
         "🔊 FAAAH Shell": {
             "path": "powershell.exe",

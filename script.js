@@ -14,6 +14,7 @@ document.addEventListener('wheel', (e) => {
 // Interação de cartão com mouse
 
 const cards = document.querySelectorAll('#tecs ul li');
+let text = document.querySelectorAll('#tecs .tecbox1 .tectext');
 
 cards.forEach((card) => {
     card.addEventListener('pointermove', (e) => {
@@ -49,7 +50,10 @@ let Ultimo = cards.length - 1
 
 botaoAnter.onclick = () => {
     let cardAntigo = document.querySelector('#tecs .tecbox2 ul li.ativo');
+    let textAntigo = document.querySelector('#tecs .tecbox1 .tectext.textoAtivo');
     cardAntigo.classList.remove('ativo');
+    textAntigo.classList.remove('textoAtivo');
+
 
     if (active - 1 < Primeiro) {
         active = Ultimo;
@@ -57,11 +61,14 @@ botaoAnter.onclick = () => {
         active--;
     }
     cards[active].classList.add('ativo');
+    text[active].classList.add('textoAtivo');
 }
 
 botaoProx.onclick = () => {
     let cardAntigo = document.querySelector('#tecs .tecbox2 ul li.ativo');
+    let textAntigo = document.querySelector('#tecs .tecbox1 .tectext.textoAtivo');
     cardAntigo.classList.remove('ativo');
+    textAntigo.classList.remove('textoAtivo');
 
     if (active + 1 > Ultimo) {
         active = 0
@@ -69,4 +76,5 @@ botaoProx.onclick = () => {
         active++
     }
     cards[active].classList.add('ativo');
+    text[active].classList.add('textoAtivo');
 }

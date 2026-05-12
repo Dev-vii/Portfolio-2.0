@@ -221,30 +221,65 @@ section {
                 left: 600px;
                 white-space: nowrap;
             }
+
+            .tectext {
+                position: absolute;
+                width: 400px;
+                height: 100px;
+                top: 300px;
+                left: 1030px;
+                opacity: 0;
+                text-align: center;
+
+                h4 {
+                    font-family: font-title;
+                    color: var(--white);
+                    font-size: 40px;
+                }
+
+                p {
+                    font-family: font-title;
+                    color: var(--white);
+                    font-size: 18px;
+                }
+            }
         }
 
         #buttons {
             position: absolute;
-            top: 500px;
+            display: flex;
+            top: 600px;
             left: 1100px;
+            gap: 150px;
 
-            button {
-                font-family: font-title;
-                font-size: 20px;
-                color: var(--white);
-                background-color: transparent;
-                border: 2px solid var(--white);
-                border-radius: 5px;
-                padding: 10px 20px;
-                margin: 0 10px;
+            & button {
+                position: relative;
                 cursor: pointer;
-                transition: all 0.3s ease;
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                border: none;
 
-                &:hover {
-                    background-color: var(--white);
-                    color: rgb(39, 39, 39);
-                    transform: scale(1.1);
+                img {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
+            }
+
+            #anter {
+                left: 0;
+
+                img {
+                    transform: translate(-50%, -50%) rotate(180deg);
+                }
+            }
+
+            #prox {
+                left: 50px;
             }
         }
 
@@ -317,7 +352,7 @@ section {
                     background-color: rgba(255, 255, 255, 0.336);
                     backdrop-filter: blur(6px);
                     box-shadow: #00000038 10px 10px 10px 0px;
-                    top: 120px;
+                    top: 1120px;
                     left: 190px;
                     z-index: 3;
                     cursor: pointer;
@@ -350,11 +385,19 @@ section {
 
     #tecs {
 
+        .tecbox1 {
+
+            & .textoAtivo {
+                opacity: 1;
+            }
+        }
+
         .tecbox2 {
 
             ul {
                 & .ativo {
                     opacity: 1;
+                    top: 120px;
                 }
             }
         }
